@@ -17,7 +17,7 @@
 <body>
   <nav class="navbar navbar-expand-sm navbar-dark fixed-top estilnav" >
     <div class="container-fluid">
-      <a class="navbar-brand" href="Pag_Principal.html" style="font-size: 30px;"><img src="{% static 'Go_mon/img/Go_monCB.png'%}" alt="No disponible" class="calma" style="margin-bottom: 8px;">Go_Mon</a>
+      <a class="navbar-brand" href="{% url 'Pag_Principal' %}" style="font-size: 30px;"><img src="{% static 'Go_mon/img/Go_monCB.png'%}" alt="No disponible" class="calma" style="margin-bottom: 8px;">Go_Mon</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -29,9 +29,9 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Inicio de sesión</a>
             <ul class="dropdown-menu estilcaja" >
-                <li><a class="dropdown-item" href="iniciouser.html">Soy Padre</a></li>
-                <li><a class="dropdown-item" href="iniciocuid.html">Soy Cuidador</a></li>
-                <li><a class="dropdown-item" href="inicioadmin.html">Soy Admnistrador</a></li>
+                <li><a class="dropdown-item" href="{% url 'iniciouser' %}">Soy Padre</a></li>
+                <li><a class="dropdown-item" href="{% url 'iniciocuid' %}">Soy Cuidador</a></li>
+                <li><a class="dropdown-item" href="{% url 'inicioadmin' %}">Soy Admnistrador</a></li>
             </ul>
           </li>
           <li class="nav-item">
