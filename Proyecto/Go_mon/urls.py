@@ -1,10 +1,12 @@
 from django.contrib import admin
 from django.urls import path
-from .views import Pag_Principal,iniciouser,adm,admbanear,admministrador,Apoderado,buscador,calendario,cambio,descripcion,descripcion2
+from .views import Pag_Principal,iniciouser,inicioadmin,iniciocuid,adm,admbanear,admministrador,Apoderado,buscador,calendario,cambio,descripcion,descripcion2
 
 urlpatterns = [
     path('',Pag_Principal,name="Pag_Principal"),
     path('iniciouser/', iniciouser, name="iniciouser"),
+    path('inicioadmin/', inicioadmin, name="inicioadmin"),
+    path('iniciocuid/', iniciocuid, name="iniciocuid"),
     path('adm/', adm, name="adm"),
     path('admbanear/', admbanear, name="admbanear"),
     path('admministrador/', admministrador, name="admministrador"),

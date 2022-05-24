@@ -8,6 +8,12 @@ def Pag_Principal(request):
 def iniciouser(request):
     return render(request,'Go_mon/iniciouser.html')
 
+def inicioadmin(request):
+    return render(request,'Go_mon/inicioadmin.html')
+
+def iniciocuid(request):
+    return render(request,'Go_mon/iniciocuid.html')
+
 def adm(request):
     return render(request,'Go_mon/adm.html')
 
