@@ -44,5 +44,5 @@ def descripcion2(request):
 def Perfil(request):
     return render(request,'Go_mon/Perfil.html')
 
-def perfil_editado(request):
-    return render(request,'Go_mon/perfil_editado.html')
+def perfil_editar(request):
+    return render(request,'Go_mon/perfil_editar.html')
