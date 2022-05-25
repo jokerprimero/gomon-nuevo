@@ -41,8 +41,16 @@ def descripcion(request):
 def descripcion2(request):
     return render(request,'Go_mon/descripcion2.html')
 
+<<<<<<< Updated upstream
 def Perfil(request):
     return render(request,'Go_mon/Perfil.html')
 
 def perfil_editar(request):
     return render(request,'Go_mon/perfil_editar.html')
+=======
+def perfil_editar(request):
+    return render(request,'Go_mon/perfil_editar.html')
+
+def Perfil(request):
+    return render(request,'Go_mon/Perfil.html')
+>>>>>>> Stashed changes

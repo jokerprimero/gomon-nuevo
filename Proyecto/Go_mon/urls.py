@@ -1,6 +1,10 @@
 from django.contrib import admin
 from django.urls import path
+<<<<<<< Updated upstream
 from .views import Pag_Principal,iniciouser,inicioadmin,iniciocuid,adm,admbanear,admministrador,Apoderado,buscador,calendario,cambio,descripcion,descripcion2,Perfil,perfil_editar
+=======
+from .views import Pag_Principal,iniciouser,adm,admbanear,admministrador,Apoderado,buscador,calendario,cambio,descripcion,descripcion2,perfil_editar,Perfil
+>>>>>>> Stashed changes
 
 urlpatterns = [
     path('',Pag_Principal,name="Pag_Principal"),
